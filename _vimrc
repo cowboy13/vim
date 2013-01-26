@@ -287,7 +287,7 @@ vmap <F11> <leader>c<space>
 vmap <C-F11> <leader>cu
 
 " 指定 jsLint 调用路径，通常不用更改
-let g:jslint_command = $VIM . '\vimfiles\etc\jsl\jsl.exe'
+let g:jslint_command = $VIM . '\etc\jsl\jsl.exe'
 "" 指定 jsLint 的启动参数，可以指定相应的配置文件
 let g:jslint_command_options = '-nofilelisting -nocontext -nosummary -nologo -process'
 "" 插件的主要调用方式
