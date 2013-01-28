@@ -354,8 +354,8 @@ inoremap <expr><space>  pumvisible() ? neocomplcache#close_popup() . "\<SPACE>" 
 "let g:neocomplcache_disable_auto_complete = 1
 "let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+"imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+"smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 
 "javascript indent
 let g:SimpleJsIndenter_BriefMode = 1
@@ -374,4 +374,13 @@ let Tlist_Process_File_Always = 1
 let Tlist_Display_Prototype = 0
 let Tlist_Compact_Format = 1
 
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+"Use a custom file listing command:
+let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
+let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
 
